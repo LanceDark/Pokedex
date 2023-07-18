@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  height: 200px;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 50px;
+}
+
+.searchArea {
+  display: flex;
+  height: 50px;
+  padding-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.shinyButton {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  margin-right: 10px;
+  background-color: transparent;
+  height: 25px;
+}
+
+.shinyButton:hover {
+  cursor: pointer;
+}
+
+.typShiny {
+  padding-top: 10px;
+  display: flex;
+  margin-top: -20px;
+  z-index: 1;
+  gap: 75px;
+}
+
+.Types {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.pokeName::first-letter {
+  text-transform: capitalize;
+}
+
+.pokePic {
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.infoLinks {
+  display: flex;
+  gap: 30px;
+}
+
+#pokedex {
+  background-color: transparent;
+  width: 200px;
+  height: 325px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.pokeCard:hover {
+  cursor: pointer;
+}
+
+.bgImage {
+  background-image: url("./img/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0px;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.pokemonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: absolute;
+  padding-left: 70px;
+  padding-right: 50px;
+  max-height: 100%; /* Hier die gewünschte Höhe eintragen */
+  overflow-y: auto;
+  padding-bottom: 50px
+}
+
+.pokemonContainer::-webkit-scrollbar {
+  width: 0.5em; /* width of scrollbar */
+}
+
+.pokemonContainer::-webkit-scrollbar-track {
+  background-color: transparent; /* backgroundcolor of scrollbar */
+}
+
+.pokemonContainer::-webkit-scrollbar-thumb {
+  background-color: transparent; /* color of scrollbar */
+}
+
+.pokemonCard{
+  border-radius: 10px;
+}
+
+.infoSheet {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: grey;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showType {
+  border-radius: 10px;
+  background-color: aqua;
+  width: 60px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+#welcomeSection {
+  display: none;
+}
+
+.firstImpression {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ballImg {
+  animation: rotateImage 4s linear infinite; 
+  height: 300px;
+}
